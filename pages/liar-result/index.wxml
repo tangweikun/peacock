@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    我是说谎
+  </view>
+
+  <view bindtap="_goLiarExam">
+    开始测试
+  </view>
+</view>

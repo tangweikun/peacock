@@ -42,13 +42,6 @@ Page({
     }
   },
 
-  onShareAppMessage: function() {
-    return {
-      title: '智商666',
-      path: '/pages/index/index',
-    }
-  },
-
   _goLiarExam: function() {
     wx.navigateTo({ url: '/pages/liar/index' })
   },

@@ -1,0 +1,42 @@
+.coping {
+  height: 60rpx;
+  width: 100%;
+  background: yellowgreen;
+}
+
+.current {
+  position: fixed;
+  left: 45%;
+  top: 4rpx;
+  color: #ffffff;
+}
+
+.inner {
+  height: 60rpx;
+  background: green;
+}
+
+.body-wrapper {
+  padding-top: 200rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+
+.question {
+  font-size: 36rpx;
+}
+
+.options-wrapper {
+  font-size: 40rpx;
+  padding: 80rpx 20rpx;
+}
+
+.option {
+  padding-bottom: 40rpx;
+}
+
+.gameover {
+  font-size: 80rpx;
+  text-align: center;
+  padding: 200rpx 20rpx;
+}

@@ -1,0 +1,38 @@
+<view>
+  <view class="gameover" wx:if="{{gameover}}">
+    {{liarLever[score].title}}
+  </view>
+
+  <view wx:else>
+    <view class="coping">
+      <view class="inner" style="width:{{progress}}">
+      
+      </view>
+
+      <view class="current">{{current}}/{{questions.length}}</view>
+    </view>
+
+    <view class="body-wrapper">
+      <view class="question">
+        {{currentQuestion.question}}
+      </view>
+
+      <view class="options-wrapper">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <view wx:for="{{currentQuestion.options}}" wx:key="{{index}}" class="option">
+            <label class="radio">
+              <radio value="{{item}}" checked="{{item.checked}}"/>{{item}}
+            </label>
+          </view>
+        </radio-group>
+      </view>
+
+      <view>
+        <button disabled="{{currentAnswer === ''}}" type="primary" wx:if="{{current < questions.length}}" bindtap="_goNextQuestion">下一题</button>
+        <button disabled="{{currentAnswer === ''}}" type="warn" wx:else bindtap="_goResultPage">查看结果</button>
+      </view>
+
+    </view>
+  </view>
+
+</view>
