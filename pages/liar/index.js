@@ -61,6 +61,33 @@ Page({
     }
   },
 
+  _previewImage: function(e) {
+    wx.previewImage({
+      current: 'http://touxiang.yeree.com/pics/6b/1185063.jpg', // 当前显示图片的http链接
+      urls: ['http://touxiang.yeree.com/pics/6b/1185063.jpg'], // 需要预览的图片http链接列表
+    })
+  },
+
+  _saveImage: function() {
+    wx.downloadFile({
+      url: 'http://touxiang.yeree.com/pics/6b/1185063.jpg', //仅为示例，并非真实的资源
+
+      success: function(res) {
+        wx.saveImageToPhotosAlbum({
+          filePath: res.tempFilePath,
+
+          success() {
+            wx.showToast({
+              title: '保存成功',
+              icon: 'success',
+              duration: 800,
+            })
+          },
+        })
+      },
+    })
+  },
+
   radioChange: function(e) {
     if (this.data.currentAnswer === '') {
       this.setData({
