@@ -1,10 +1,15 @@
 <view>
   <view class="gameover" wx:if="{{gameover}}">
     {{liarLever[score].title}}
-    <image bindtap="_previewImage" src="http://touxiang.yeree.com/pics/6b/1185063.jpg"> </image>
-    <button bindtap="_saveImage" type="warn" style="width:88%">
+    <view class="canvas-wrapper">
+      <canvas canvas-id="shareCanvas" style="width:300px;height:300px"></canvas>
+    </view>
+    
+    <!-- <image bindtap="_previewImage" src="http://touxiang.yeree.com/pics/6b/1185063.jpg"> </image> -->
+    <button bindtap="_saveCanvas" type="warn" style="width:88%">
       保存上图
     </button>
+    
   </view>
 
   <view wx:else>

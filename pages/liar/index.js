@@ -20,6 +20,24 @@ Page({
     this.setData({
       currentQuestion: LIAR_QUESTIONS[0],
     })
+    this.share()
+  },
+
+  share: function() {
+    const ctx = wx.createCanvasContext('shareCanvas')
+    ctx.drawImage(
+      'http://touxiang.yeree.com/pics/6b/1185063.jpg',
+      0,
+      0,
+      600,
+      900,
+    )
+    ctx.setTextAlign('center') // 文字居中
+    ctx.setFillStyle('#000000') // 文字颜色：黑色
+    ctx.setFontSize(22) // 文字字号：22px
+    ctx.fillText('作者：一斤代码', 600 / 2, 500)
+    ctx.stroke()
+    ctx.draw()
   },
 
   onShareAppMessage: function() {
@@ -66,6 +84,25 @@ Page({
       current: 'http://touxiang.yeree.com/pics/6b/1185063.jpg', // 当前显示图片的http链接
       urls: ['http://touxiang.yeree.com/pics/6b/1185063.jpg'], // 需要预览的图片http链接列表
     })
+  },
+
+  _saveCanvas: function() {
+    wx.canvasToTempFilePath(
+      {
+        canvasId: 'shareCanvas',
+        success: function(res) {
+          return wx.saveImageToPhotosAlbum({
+            filePath: res.tempFilePath,
+            success: function() {
+              wx.showToast({
+                title: '已保存到相册',
+              })
+            },
+          })
+        },
+      },
+      this,
+    )
   },
 
   _saveImage: function() {

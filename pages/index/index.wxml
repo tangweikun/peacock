@@ -1,10 +1,17 @@
 
 <view>
-  <view class="userinfo">
+  <!-- <view class="userinfo">
     五道题测出你的撒谎能力
+  </view> -->
+  <view>
+    <canvas style="width: 300px; height: 200px;" canvas-id="smiling-face"></canvas>
   </view>
 
-  <button bindtap="_goLiarExam" type="warn" style="width:88%">
-    开始测试
+  <button bindtap="_saveCanvas" type="warn" style="width:88%">
+    保存上图
   </button>
+
+  <!-- <button bindtap="_goLiarExam" type="warn" style="width:88%">
+    开始测试
+  </button> -->
 </view>
