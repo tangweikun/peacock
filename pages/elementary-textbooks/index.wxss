@@ -1,0 +1,52 @@
+.coping {
+  height: 60rpx;
+  width: 100%;
+  background: yellowgreen;
+}
+
+.canvas-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.current {
+  position: fixed;
+  left: 45%;
+  top: 4rpx;
+  color: #ffffff;
+}
+
+.inner {
+  height: 60rpx;
+  background: green;
+}
+
+.body-wrapper {
+  padding-top: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.question {
+  text-align: center;
+}
+
+.options-wrapper {
+  font-size: 40rpx;
+  padding: 40rpx 20rpx;
+}
+
+.option {
+  padding-bottom: 40rpx;
+}
+
+.gameover {
+  font-size: 80rpx;
+  text-align: center;
+  padding: 200rpx 20rpx;
+}
+
+.button-wrapper {
+  margin-bottom: 20rpx;
+}

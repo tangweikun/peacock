@@ -18,6 +18,6 @@ Page({
 
   bindGetUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo
-    wx.navigateTo({ url: '/pages/life-transcript/index' })
+    wx.navigateTo({ url: '/pages/elementary-textbooks/index' })
   },
 })

@@ -1,5 +1,9 @@
 {
-  "pages": ["pages/index/index", "pages/life-transcript/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/life-transcript/index",
+    "pages/elementary-textbooks/index"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
