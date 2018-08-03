@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/index/index", "pages/liar/index"],
+  "pages": ["pages/index/index", "pages/life-transcript/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

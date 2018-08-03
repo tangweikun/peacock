@@ -1,0 +1,16 @@
+<view>
+  <view class="canvas-wrapper">
+    <canvas style="width: 280px; height: 380px;" canvas-id="life-transcript"></canvas>
+  </view>
+
+  <view class="button-wrapper">
+    <button bindtap="_saveCanvas" type="warn" style="width:42%">
+      保存上图
+    </button>
+    <button open-type="share" type="warn" style="width:42%">
+      分享好友
+    </button>
+  </view>
+
+    
+</view>

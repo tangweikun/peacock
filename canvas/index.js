@@ -1,2 +1,7 @@
 export * from './life-transcript'
 export * from './smiling-face'
+export * from './demo-1'
+export * from './demo-2'
+export * from './demo-3'
+export * from './demo-4'
+export * from './demo-triangle'

@@ -1,17 +1,13 @@
 const app = getApp()
-const { createSmilingFace } = require('../../canvas/index')
-const { saveCanvas } = require('../../utils/index')
 
 Page({
   data: {},
 
   _saveCanvas: function() {
-    saveCanvas('smiling-face')
+    saveCanvas('life-transcript')
   },
 
-  onLoad: function() {
-    createSmilingFace()
-  },
+  onLoad: function() {},
 
   onShareAppMessage: function() {
     return {
@@ -20,7 +16,8 @@ Page({
     }
   },
 
-  _goLiarExam: function() {
-    wx.navigateTo({ url: '/pages/liar/index' })
+  bindGetUserInfo: function(e) {
+    app.globalData.userInfo = e.detail.userInfo
+    wx.navigateTo({ url: '/pages/life-transcript/index' })
   },
 })

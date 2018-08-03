@@ -1,11 +1,10 @@
 <view>
   <view class="gameover" wx:if="{{gameover}}">
-    {{liarLever[score].title}}
     <view class="canvas-wrapper">
-      <canvas canvas-id="shareCanvas" style="width:300px;height:300px"></canvas>
+      <canvas style="width: 280px; height: 380px;" canvas-id="life-transcript"></canvas>
     </view>
     
-    <!-- <image bindtap="_previewImage" src="http://touxiang.yeree.com/pics/6b/1185063.jpg"> </image> -->
+
     <button bindtap="_saveCanvas" type="warn" style="width:88%">
       保存上图
     </button>
