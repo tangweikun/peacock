@@ -1,7 +1,11 @@
 .coping {
   height: 60rpx;
   width: 100%;
-  background: yellowgreen;
+  background: #c2ecd2;
+}
+
+page {
+  /* background: #c4b2e6; */
 }
 
 .canvas-wrapper {
@@ -19,17 +23,20 @@
 
 .inner {
   height: 60rpx;
-  background: green;
+  background: #52c37c;
 }
 
 .body-wrapper {
-  padding-top: 50rpx;
+  padding-top: 40rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
 }
 
 .question {
   text-align: center;
+  margin: 0 auto;
+  width: 648rpx;
+  height: 476rpx;
 }
 
 .options-wrapper {
@@ -48,5 +55,10 @@
 }
 
 .button-wrapper {
-  margin-bottom: 20rpx;
+  display: flex;
+  margin-top: 80rpx;
+}
+
+.button-wrapper2 {
+  /* margin-bottom: 20rpx; */
 }

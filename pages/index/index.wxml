@@ -1,11 +1,14 @@
 
 <view class="container">
+  <view class="image-wrapper">
+    <image src="https://twk.oss-cn-beijing.aliyuncs.com/texbooks-cover/6.png" style="width:100%;height:100%"></image>
+  </view>
   <button
     open-type="getUserInfo"
     bindgetuserinfo="bindGetUserInfo"
     type="warn"
-    style="width:88%"
+    style="width:88%;margin-top:30px;"
   >
-    开启人生成绩单
+    开启挑战
   </button>
 </view>

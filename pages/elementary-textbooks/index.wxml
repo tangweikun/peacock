@@ -1,14 +1,18 @@
 <view>
   <view class="gameover" wx:if="{{gameover}}">
     <view class="canvas-wrapper">
-      <canvas style="width: 280px; height: 380px;" canvas-id="life-transcript"></canvas>
+      <canvas style="width: 306px; height: 225px;" canvas-id="elementary-textbooks"></canvas>
     </view>
-    
 
-    <button bindtap="_saveCanvas" type="warn" style="width:88%">
-      保存上图
-    </button>
-    
+    <view class="button-wrapper">
+      <button bindtap="_saveCanvas" type="warn" style="width:42%">
+        保存奖状
+      </button>
+      <button open-type="share" type="warn" style="width:42%">
+        分享好友
+      </button>
+  </view>
+
   </view>
 
   <view wx:else>
@@ -22,7 +26,7 @@
 
     <view class="body-wrapper">
       <view class="question">
-        <image style="width:92%;height:240px" src="{{currentQuestion.img}}"></image>
+        <image style="width:100%;height:100%" src="{{currentQuestion.img}}"></image>
       </view>
 
       <view class="options-wrapper">
@@ -35,7 +39,7 @@
         </radio-group>
       </view>
 
-      <view class="button-wrapper">
+      <view class="button-wrapper2">
         <button disabled="{{currentAnswer === ''}}" type="primary" wx:if="{{current < questions.length}}" bindtap="_goNextQuestion">下一题</button>
         <button disabled="{{currentAnswer === ''}}" type="warn" wx:else bindtap="_goResultPage">查看结果</button>
       </view>

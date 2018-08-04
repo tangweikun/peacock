@@ -11,7 +11,7 @@ Page({
 
   onShareAppMessage: function() {
     return {
-      title: '智商666',
+      title: '我不是学霸?',
       path: '/pages/index/index',
     }
   },

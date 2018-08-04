@@ -3,3 +3,8 @@
   justify-content: center;
   padding: 100rpx 0;
 }
+
+.image-wrapper {
+  width: 600rpx;
+  height: 840rpx;
+}
