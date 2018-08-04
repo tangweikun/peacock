@@ -11,6 +11,59 @@ export const TEXTBOOKS = [
     options: ['游园不值', '梅花', '早梅', '山园小梅'],
     answer: '游园不值',
   },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/jin_se_de_yu_gou.png',
+    options: ['红军', '金色的鱼钩', '倔强的小红军', '草地夜行'],
+    answer: '金色的鱼钩',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/wan_bi_gui_zhao.png',
+    options: ['负荆请罪', '完璧归赵', '晏子使楚', '将相和'],
+    answer: '将相和',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/huang_ji_guang.png',
+    options: ['我的战友邱少云', '再见了,亲人', '抗美援朝', '黄继光'],
+    answer: '黄继光',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/shao_nian_run_tu.png',
+    options: ['少年闺土', '黄飞鸿', '回忆小时候', '少年闰土'],
+    answer: '少年闰土',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/jing_yang_gang.png',
+    options: ['武松打虎', '水浒传', '景阳冈', '三碗不过岗'],
+    answer: '景阳冈',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/mai_huo_chai_de_xiao_nv_hai.png',
+    options: ['卖火柴的小女', '三根火柴', '卖火柴的小女孩', '卖女孩的小火柴'],
+    answer: '卖火柴的小女孩',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/wo_de_bo_fu_lu_xun_xian_sheng.png',
+    options: ['十六年前的回忆', '我的伯父鲁迅先生', '白杨礼赞', '灯光'],
+    answer: '我的伯父鲁迅先生',
+  },
+  {
+    img:
+      'https://twk.oss-cn-beijing.aliyuncs.com/textbooks-illustration/yi_ye_de_gong_zuo.png',
+    options: [
+      '周总理借书',
+      '为中华之崛起而读书',
+      '一夜的工作',
+      '十里长街送总理',
+    ],
+    answer: '一夜的工作',
+  },
 ]
 
 export const LEARNING_LEVEL = [
@@ -138,6 +191,20 @@ export const LEARNING_LEVEL = [
       '芙蓉不及美人妆,水殿风来珠翠香',
       '回眸一笑百媚生,六宫粉黛无颜色',
       '纤纤作细步,精妙世无双',
+    ],
+  },
+  {
+    title: '最牛学神',
+    description: '高大帅气,青春靓丽,不食人间烟火',
+    boyDesc: [
+      '一枝独秀压海棠,玉树临风胜潘安',
+      '陌上人如玉,公子世无双',
+      '一双眼光射寒星,两弯眉浑如刷漆',
+    ],
+    girlDesc: [
+      '清水出芙蓉,天然去雕饰',
+      '纤纤作细步,精妙世无双',
+      '芙蓉不及美人妆,水殿风来珠翠香',
     ],
   },
   {

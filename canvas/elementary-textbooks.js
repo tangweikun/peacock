@@ -37,7 +37,7 @@ export function createElementaryTextbooks(
   ctx.font = '14px sans-serif'
   ctx.fillText(userInfo.nickName + ' 同学:', 40, 110)
 
-  ctx.fillText(description, 56, 132)
+  ctx.fillText(description, 60, 132)
   ctx.fillText('被评为', 40, 155)
 
   ctx.fillStyle = 'red'
